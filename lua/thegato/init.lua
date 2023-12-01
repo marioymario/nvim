@@ -1,0 +1,6 @@
+require("thegato.remap")
+require("thegato.set")
+print("May all sentient beings have happiness and its cause.")
+print("May they be free from suffering and its cause.")
+print("May they be inseparable from sorrowless bliss.")
+print("May they abide in equanimity, free of bias for loved ones and enemies.")
