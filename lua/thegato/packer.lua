@@ -20,12 +20,19 @@ return require('packer').startup(function(use)
 		ts_update()
 		end,}
   use("nvim-treesitter/playground")
-  use("theprimeagen/harpoon")
+  -- use("theprimeagen/harpoon")
+  use "nvim-lua/plenary.nvim" -- don't forget to add this one if you don't have it yet!
+    use {
+        "ThePrimeagen/harpoon",
+        branch = "harpoon2",
+        requires = { {"nvim-lua/plenary.nvim"} }
+    }
+
   use("tpope/vim-fugitive")
   use("akinsho/toggleterm.nvim")
   use {
 	'VonHeikemen/lsp-zero.nvim',
-	branch = 'v1.x',
+    branch = 'v1.x',
 	requires = {
 		-- LSP Support
 		{'neovim/nvim-lspconfig'},
